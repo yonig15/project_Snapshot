@@ -1,0 +1,281 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: DynaPuff;
+}
+/* ****************************header of page*********************** */
+
+header{
+  position: sticky; 
+  top: 0;
+}
+
+.navcon {
+  width:100%;
+  height: 30px;
+  background-color: rgb(66, 66, 66);
+  display: flex;
+  flex-direction: row;
+  /* justify-content: center; */
+  align-items: center;
+  padding: 10px;
+  border-radius: 3px;
+}
+
+.navbar {
+  list-style: none;
+}
+.button_nav {
+  margin: 2px;
+  color:   rgb(66, 66, 66);
+  background-color: rgb(186, 226, 255);
+  padding: 5px;
+  border-radius: 7px;
+  border-color: rgb(186, 226, 255);
+  transition: 0.5s;
+}
+
+.button_nav:hover{
+  transform: scale(1.2);
+  cursor: pointer;
+}
+
+/* ****************************header of page*********************** */
+
+/* ******************main of page****************** */
+main{
+  margin: 15px;
+}
+
+.about_me {
+  margin-top: 20px;
+  width: 800px;
+  /* overflow: auto; */
+}
+
+.img_background {
+  position: absolute;
+  opacity: 0.3;
+  left: 0px;
+  top: 0px;
+  z-index: -1;
+}
+
+.img1 {
+  height: 350px;
+  border-radius: 500px;
+  margin-top: -100px;
+  margin-left: 960px;
+  display: flex;
+  justify-content: center;
+  position: absolute;
+}
+
+table {
+  table-layout: fixed;
+  margin-top: 30px;
+  border-collapse: collapse;
+  border: 3px solid rgb(68, 68, 68);
+  text-align: center;
+  width: 100%;
+}
+
+table a {
+  color: rgb(36, 78, 167);
+}
+
+table a:hover{
+color: brown;
+}
+
+.Head_of_table {
+  background-color: rgb(150, 152, 152);
+}
+
+th {
+  padding: 5px;
+  border: 3px solid rgb(68, 68, 68);
+}
+
+td{
+padding: 5px;
+white-space: nowrap;
+overflow:auto;
+}
+
+select{
+  width: 150px;
+}
+
+h1{
+word-wrap: break-word;
+}
+
+p{
+  margin-top: 10px;
+  margin-left: 5px;
+  line-height: 1.5;
+ word-spacing: 3px;
+ text-transform: capitalize;
+}
+
+/* Design of the DLL page */
+.OneDll{
+
+  width: 100%;
+  height: 560px;
+  background-color: rgb(186, 226, 255);
+  border-radius: 5px;
+  overflow: auto;
+}
+
+.Dll_li{
+  padding: 5px;
+}
+
+tr:nth-child(even) {background: rgb(186, 226, 255)}
+tr:nth-child(odd) {background: rgb(213, 232, 254)}
+
+.bodySnapShotSample{
+  background-color: bisque;
+}
+
+.bodyDll{
+  background-color: bisque;
+}
+
+.bodyHomePage{
+  background-color: bisque;
+}
+
+.Dll_Home_Page{
+  width: 1200px;
+  height: 1px;
+  background-color: rgb(215, 215, 244);
+  border-radius: 5px;
+  overflow: auto;
+}
+/*******************main of page****************** */
+
+/* ****************************************footer************************************* */
+
+footer {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  color: azure;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  /* height: 200px; */
+  gap: 400px;
+  margin-top: 310px;
+  background-color:  rgb(66, 66, 66);
+}
+
+a {
+  color: rgb(186, 226, 255);
+  text-decoration: none;
+}
+
+.foot1 {
+  display: flex;
+  flex-direction: column;
+  line-height: 40px;
+}
+
+.ul4 {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.foot2 {
+  display: flex;
+  flex-direction: row;
+  line-height: 40px;
+  gap: 10px;
+}
+
+.title1 {
+  font-weight: bolder;
+  font-size: larger;
+  list-style: none;
+  color: azure;
+  line-height: 30px;
+}
+
+#redborder {
+  list-style: none;
+  border-bottom: solid 2px rgb(223, 16, 16);
+  width: 50px;
+}
+
+/* ****************************************footer************************************* */
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* .container {
+  display: flex;
+  flex-direction: row;
+} */
+/* 
+.container {
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: repeat(1, 60px);
+  gap: 10px;
+}
+
+@media screen and (max-width: 800px) {
+  .container {
+    flex-direction: column;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1500px) {
+  .container {
+    display: grid;
+    /* grid-template-rows: 300px 300px 300px 300px;
+    grid-template-columns: 50% 50%;
+    grid-template-areas:
+      "item1 item1"
+      "item2 item3"
+      "item4 item4";
+  }
+  .item1 {
+    grid-area: item1;
+  }
+  .item2 {
+    grid-area: item2;
+  }
+  .item3 {
+    grid-area: item3;
+  }
+  .item4 {
+    grid-area: item4;
+  }
+
+  .item1 {
+    content: url(header);
+  }
+  
+  .item2 {
+    content: url(.item2);
+  }
+  
+  .item3 {
+    content: url(/image/Family.jpg);
+  }
+  
+  .item4 {
+    content: url(footer);
+  }
