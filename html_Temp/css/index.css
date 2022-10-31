@@ -103,6 +103,14 @@ white-space: nowrap;
 overflow:auto;
 }
 
+tr:nth-child(even) {background: rgb(186, 226, 255)}
+tr:nth-child(odd) {background: rgb(213, 232, 254)}
+
+tr:hover{
+background-color: aquamarine;
+color: blue;
+}
+
 select{
   width: 150px;
 }
@@ -132,9 +140,6 @@ p{
 .Dll_li{
   padding: 5px;
 }
-
-tr:nth-child(even) {background: rgb(186, 226, 255)}
-tr:nth-child(odd) {background: rgb(213, 232, 254)}
 
 .bodySnapShotSample{
   background-color: bisque;
