@@ -57,6 +57,12 @@ void Search_HighestWorkingSetSize_In_One_p(t_HeadOfSnapshotsList* headOfSnapshot
 
 	t_ProcessData* HolderOfHigestWSS = headOfSnapshot->HeadOfSnapshot;
 	t_ProcessData* List = headOfSnapshot->HeadOfSnapshot->ProcessListNext;
+	if (HolderOfHigestWSS == NULL || List == NULL) {
+		err = GetLastError();
+		strE = strerror(err);
+		Error_Log(strE);
+		return;
+	}
 
 	while (List != NULL) {
 		if (HolderOfHigestWSS->MemoryWorkingSetSize >= List->MemoryWorkingSetSize) {
@@ -374,6 +380,12 @@ void GetMemoryAndDllInfo(DWORD processID, char strTime[100], int CounterOfSnapsh
 
 	//**placement***
 	t_ProcessData* Curr = (t_ProcessData*)malloc(sizeof(t_ProcessData));
+	if (Curr == NULL) {
+		err = GetLastError();
+		strE = strerror(err);
+		Error_Log(strE);
+		return;
+	}
 
 	Curr->ProcessListNext = NULL;
 	Curr->ProcessListPrev = NULL;
@@ -420,7 +432,6 @@ void GetMemoryAndDllInfo(DWORD processID, char strTime[100], int CounterOfSnapsh
 		err = GetLastError();
 		strE = strerror(err);
 		Error_Log(strE);
-		//error. write to log
 	}
 
 	//Get memory info
@@ -477,8 +488,6 @@ void GetMemoryAndDllInfo(DWORD processID, char strTime[100], int CounterOfSnapsh
 
 void GetProcessesInfo()
 {
-	int err;
-	char* strE;
 	//Get Processes - Receive all process ID
 	DWORD aProcesses[1024], cbNeeded, cProcesses;  //* aProcesses - array of id, * cProcesses - how many id we have 
 	unsigned int i;
@@ -489,7 +498,6 @@ void GetProcessesInfo()
 		err = GetLastError();
 		strE = strerror(err);
 		Error_Log(strE);
-		//Error. Write to log
 		return 1;
 	}
 
@@ -516,6 +524,12 @@ void GetProcessesInfo()
 
 	Shaiker_Sort_ProcessDataByDllCount();
 	t_HeadOfSnapshotsList* CurrentHead = (t_HeadOfSnapshotsList*)malloc(sizeof(t_HeadOfSnapshotsList));
+	if (CurrentHead == NULL) {
+		err = GetLastError();
+		strE = strerror(err);
+		Error_Log(strE);
+		return;
+	}
 	CurrentHead->HeadOfSnapshot = ProcessListHead;
 	CurrentHead->prosesCountOfEachHead = prosesCount; ///cProcesses- i dont use this, becuse it include the process that we are not allwo to get into.
 	CurrentHead->sum_of_Dll = sum_of_Dll;//*************For generata HTML****************
@@ -540,8 +554,13 @@ t_ProcessData* SearchProcess(DWORD processID, char key[MAX_PATH], DWORD MemoryPa
 
 	t_ProcessData* List = HeadListTail->HeadOfSnapshot;
 	t_ProcessData* currkey = HeadListTail->HeadOfSnapshot;
-
 	t_HeadOfSnapshotsList* CurrentHead1 = HeadListTail->HeadOfSnapshot;
+	if (CurrentHead1 == NULL || List == NULL || currkey == NULL) {
+		err = GetLastError();
+		strE = strerror(err);
+		Error_Log(strE);
+		return;
+	}
 
 
 	while (List != NULL)
@@ -574,6 +593,13 @@ void searchDll(char keyDLL[MAX_PATH], t_ProcessData* currproses)
 
 	t_DllList* currDllkey = currproses->CurrentDll;
 	t_DllList* List = currproses->CurrentDll;
+	if (currDllkey == NULL || List == NULL) {
+		err = GetLastError();
+		strE = strerror(err);
+		Error_Log(strE);
+		return;
+	}
+	
 
 	while (List != NULL)
 	{
@@ -637,6 +663,12 @@ void GetProcessesInfo_WithoutNULL()
 
 
 	t_HeadOfSnapshotsList* CurrentHead = (t_HeadOfSnapshotsList*)malloc(sizeof(t_HeadOfSnapshotsList));
+	if (CurrentHead == NULL) {
+		err = GetLastError();
+		strE = strerror(err);
+		Error_Log(strE);
+		return;
+	}
 	CurrentHead->HeadOfSnapshot = ProcessListHead;
 	CurrentHead->prosesCountOfEachHead = prosesCount; ///cProcesses- i dont use this, becuse it include the process that we are not allwo to get into.
 	CurrentHead->sum_of_Dll = sum_of_Dll;//*************For generata HTML****************
@@ -822,7 +854,6 @@ void GetProcessesInfo_Long_SnapShot()
 			err = GetLastError();
 			strE = strerror(err);
 			Error_Log(strE);
-			//Error. Write to log
 			return 1;
 		}
 
@@ -944,6 +975,12 @@ void ResetCollections() {
 	if (f) {
 
 		t_HeadOfSnapshotsList_Header* currHeader = (t_HeadOfSnapshotsList_Header*)malloc(sizeof(t_HeadOfSnapshotsList_Header));
+		if (CurrentHead == NULL) {
+			err = GetLastError();
+			strE = strerror(err);
+			Error_Log(strE);
+			return;
+		}
 		currHeader->version = 0;
 		currHeader->Head_Of_Snapshots_Head_List_Counter = 0;
 		strcpy(currHeader->Reserved, "the File was Reset");
@@ -958,10 +995,11 @@ void ResetCollections() {
 	}
 	else
 	{
-		//error
+		
 		err = GetLastError();
 		strE = strerror(err);
 		Error_Log(strE);
+		//error
 	}
 	fclose(f);
 

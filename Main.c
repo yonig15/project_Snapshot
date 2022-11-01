@@ -31,8 +31,6 @@ int main()
 	Event_Log("program started");
 
 
-
-
 	char UserRispon=0;
 
 	while (UserRispon != 8) {
@@ -72,7 +70,7 @@ int main()
 			HomePgaeGenerator();
 			printf("\n\nGood Job: you Create HTML Report successfully!!!\n\n");
 			printf("The Absolut Path To HTML Is:\n");
-			printf("C:\level - up\c lesson - level up\source\repos\22.9.2022\Projeckt_SnapShot_Yoni\Projeckt_SnapShot_Yoni\HTML_dist");
+			printf("C:\\level - up\\c lesson - level up\\source\\repos\\22.9.2022\\Projeckt_SnapShot_Yoni\\Projeckt_SnapShot_Yoni\\HTML_dist");
 			Sleep(5000);
 			Error_Log("************End Generate HTML Report***********");
 			break;
@@ -95,6 +93,8 @@ int main()
 			Error_Log("********End Load_Collections_From_File***************");
 			break;
 		case '8':
+			printf("\n\nGood Bye: It was nice to meet you\n\n");
+			Error_Log("********End program***************");
 			return;
 		default:
 			printf("invalid number");

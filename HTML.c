@@ -12,14 +12,14 @@
 #include "HTML4.h"
 
 
+int err;
+char* strE;
+
 
 //---------------------------------------Generate_HTML_Report---------------------------------------------
 
 void Html_SaveIntoFile(char* fileName, char* buff)
 {
-	int err;
-	char* strE;
-
 	FILE* fi = fopen(fileName, "w");
 	if (!fi)
 	{
@@ -94,6 +94,12 @@ void HomePgaeGenerator()
 	char* found = strstr(htmlTemplate, HPSEPERATOR); // find token adress
 	unsigned long len = found - htmlTemplate; // found (bigger adress) - htmlTemplate (smaller adress)
 	char* newFileSpace = (char*)malloc(strlen(htmlTemplate) + (strlen(HTML_REPLACE) * CounterOfSnapshots) + (strlen(HTML_REPLACE) * sum_of_Dll));
+	if (newFileSpace == NULL) {
+		err = GetLastError();
+		strE = strerror(err);
+		Error_Log(strE);
+		return;
+	}
 
 	strncpy(newFileSpace, htmlTemplate, len); // adding template till token position 
 	newFileSpace[len] = NULL;
@@ -144,6 +150,12 @@ void SamplePgaeGenerator(t_HeadOfSnapshotsList* currentH)
 	char* found = strstr(htmlTemplate, SPSEPERATOR); // find token adress
 	unsigned long len = found - htmlTemplate; // found (bigger adress) - htmlTemplate (smaller adress)
 	char* newFileSpace = (char*)malloc(strlen(htmlTemplate) + (strlen(HTML_REPLACE) * CounterOfSnapshots) + (strlen(HTML_REPLACE) * currentH->prosesCountOfEachHead) + (strlen(HTML_REPLACE) * currentH->sum_of_Dll));
+	if (newFileSpace == NULL) {
+		err = GetLastError();
+		strE = strerror(err);
+		Error_Log(strE);
+		return;
+	}
 
 	strncpy(newFileSpace, htmlTemplate, len); // adding template till token position 
 	newFileSpace[len] = NULL;
@@ -244,6 +256,12 @@ void DllPgaeGenerator(t_Dic_Dll* currentD, unsigned int counter)
 	char* found = strstr(htmlTemplate, DPSEPERATOR); // find token adress
 	unsigned long len = found - htmlTemplate; // found (bigger adress) - htmlTemplate (smaller adress)
 	char* newFileSpace = (char*)malloc(strlen(htmlTemplate) + (strlen(HTML_REPLACE) * currentD->Dic_counterOfProcess));
+	if (newFileSpace == NULL) {
+		err = GetLastError();
+		strE = strerror(err);
+		Error_Log(strE);
+		return;
+	}
 
 	strncpy(newFileSpace, htmlTemplate, len); // adding template till token position 
 	newFileSpace[len] = NULL;
