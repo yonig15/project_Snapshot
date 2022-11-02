@@ -1,5 +1,4 @@
-﻿  Back_up_project.c
-  Data_Base_SnapShot.c
+﻿  Data_Base_SnapShot.c
 C:\level-up\c lesson-level up\source\repos\22.9.2022\Projeckt_SnapShot_Yoni\Projeckt_SnapShot_Yoni\Data_Base_SnapShot.c(501,11): warning C4098: 'GetProcessesInfo': 'void' function returning a value
 C:\level-up\c lesson-level up\source\repos\22.9.2022\Projeckt_SnapShot_Yoni\Projeckt_SnapShot_Yoni\Data_Base_SnapShot.c(536,77): warning C4244: '=': conversion from 'unsigned __int64' to 'unsigned long', possible loss of data
 C:\level-up\c lesson-level up\source\repos\22.9.2022\Projeckt_SnapShot_Yoni\Projeckt_SnapShot_Yoni\Data_Base_SnapShot.c(562,3): warning C4033: 'SearchProcess' must return a value
@@ -12,53 +11,6 @@ C:\level-up\c lesson-level up\source\repos\22.9.2022\Projeckt_SnapShot_Yoni\Proj
 C:\level-up\c lesson-level up\source\repos\22.9.2022\Projeckt_SnapShot_Yoni\Projeckt_SnapShot_Yoni\Data_Base_SnapShot.c(883,78): warning C4244: '=': conversion from 'unsigned __int64' to 'unsigned long', possible loss of data
 C:\level-up\c lesson-level up\source\repos\22.9.2022\Projeckt_SnapShot_Yoni\Projeckt_SnapShot_Yoni\Data_Base_SnapShot.c(989,20): warning C4047: '==': 'int' differs in levels of indirection from 'void *'
 C:\level-up\c lesson-level up\source\repos\22.9.2022\Projeckt_SnapShot_Yoni\Projeckt_SnapShot_Yoni\Data_Base_SnapShot.c(988,15): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
-  Files.c
-C:\level-up\c lesson-level up\source\repos\22.9.2022\Projeckt_SnapShot_Yoni\Projeckt_SnapShot_Yoni\Files.c(54,20): warning C4047: '==': 'int' differs in levels of indirection from 'void *'
-C:\level-up\c lesson-level up\source\repos\22.9.2022\Projeckt_SnapShot_Yoni\Projeckt_SnapShot_Yoni\Files.c(88,13): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
-C:\level-up\c lesson-level up\source\repos\22.9.2022\Projeckt_SnapShot_Yoni\Projeckt_SnapShot_Yoni\Files.c(98,23): warning C4018: '<': signed/unsigned mismatch
-C:\level-up\c lesson-level up\source\repos\22.9.2022\Projeckt_SnapShot_Yoni\Projeckt_SnapShot_Yoni\Files.c(100,14): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
-C:\level-up\c lesson-level up\source\repos\22.9.2022\Projeckt_SnapShot_Yoni\Projeckt_SnapShot_Yoni\Files.c(53,15): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
-C:\level-up\c lesson-level up\source\repos\22.9.2022\Projeckt_SnapShot_Yoni\Projeckt_SnapShot_Yoni\Files.c(77,16): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
-C:\level-up\c lesson-level up\source\repos\22.9.2022\Projeckt_SnapShot_Yoni\Projeckt_SnapShot_Yoni\Files.c(171,19): warning C4047: '==': 'int' differs in levels of indirection from 'void *'
-C:\level-up\c lesson-level up\source\repos\22.9.2022\Projeckt_SnapShot_Yoni\Projeckt_SnapShot_Yoni\Files.c(181,11): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
-C:\level-up\c lesson-level up\source\repos\22.9.2022\Projeckt_SnapShot_Yoni\Projeckt_SnapShot_Yoni\Files.c(204,12): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
-C:\level-up\c lesson-level up\source\repos\22.9.2022\Projeckt_SnapShot_Yoni\Projeckt_SnapShot_Yoni\Files.c(234,23): warning C4018: '<': signed/unsigned mismatch
-C:\level-up\c lesson-level up\source\repos\22.9.2022\Projeckt_SnapShot_Yoni\Projeckt_SnapShot_Yoni\Files.c(236,13): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
-C:\level-up\c lesson-level up\source\repos\22.9.2022\Projeckt_SnapShot_Yoni\Projeckt_SnapShot_Yoni\Files.c(169,14): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
-  HTML.c
-C:\level-up\c lesson-level up\source\repos\22.9.2022\Projeckt_SnapShot_Yoni\Projeckt_SnapShot_Yoni\HTML.c(56,15): warning C4267: '+=': conversion from 'size_t' to 'int', possible loss of data
-C:\level-up\c lesson-level up\source\repos\22.9.2022\Projeckt_SnapShot_Yoni\Projeckt_SnapShot_Yoni\HTML.c(77,27): warning C4047: '=': 'char' differs in levels of indirection from 'void *'
-C:\level-up\c lesson-level up\source\repos\22.9.2022\Projeckt_SnapShot_Yoni\Projeckt_SnapShot_Yoni\HTML.c(105,26): warning C4047: '=': 'char' differs in levels of indirection from 'void *'
-C:\level-up\c lesson-level up\source\repos\22.9.2022\Projeckt_SnapShot_Yoni\Projeckt_SnapShot_Yoni\HTML.c(112,13): warning C4267: '=': conversion from 'size_t' to 'unsigned long', possible loss of data
-C:\level-up\c lesson-level up\source\repos\22.9.2022\Projeckt_SnapShot_Yoni\Projeckt_SnapShot_Yoni\HTML.c(113,27): warning C4047: '=': 'char' differs in levels of indirection from 'void *'
-C:\level-up\c lesson-level up\source\repos\22.9.2022\Projeckt_SnapShot_Yoni\Projeckt_SnapShot_Yoni\HTML.c(120,14): warning C4267: '=': conversion from 'size_t' to 'unsigned long', possible loss of data
-C:\level-up\c lesson-level up\source\repos\22.9.2022\Projeckt_SnapShot_Yoni\Projeckt_SnapShot_Yoni\HTML.c(121,28): warning C4047: '=': 'char' differs in levels of indirection from 'void *'
-C:\level-up\c lesson-level up\source\repos\22.9.2022\Projeckt_SnapShot_Yoni\Projeckt_SnapShot_Yoni\HTML.c(130,15): warning C4267: '=': conversion from 'size_t' to 'unsigned long', possible loss of data
-C:\level-up\c lesson-level up\source\repos\22.9.2022\Projeckt_SnapShot_Yoni\Projeckt_SnapShot_Yoni\HTML.c(131,29): warning C4047: '=': 'char' differs in levels of indirection from 'void *'
-C:\level-up\c lesson-level up\source\repos\22.9.2022\Projeckt_SnapShot_Yoni\Projeckt_SnapShot_Yoni\HTML.c(95,28): warning C4244: 'initializing': conversion from '__int64' to 'unsigned long', possible loss of data
-C:\level-up\c lesson-level up\source\repos\22.9.2022\Projeckt_SnapShot_Yoni\Projeckt_SnapShot_Yoni\HTML.c(161,26): warning C4047: '=': 'char' differs in levels of indirection from 'void *'
-C:\level-up\c lesson-level up\source\repos\22.9.2022\Projeckt_SnapShot_Yoni\Projeckt_SnapShot_Yoni\HTML.c(166,12): warning C4267: '=': conversion from 'size_t' to 'unsigned long', possible loss of data
-C:\level-up\c lesson-level up\source\repos\22.9.2022\Projeckt_SnapShot_Yoni\Projeckt_SnapShot_Yoni\HTML.c(167,26): warning C4047: '=': 'char' differs in levels of indirection from 'void *'
-C:\level-up\c lesson-level up\source\repos\22.9.2022\Projeckt_SnapShot_Yoni\Projeckt_SnapShot_Yoni\HTML.c(177,14): warning C4267: '=': conversion from 'size_t' to 'unsigned long', possible loss of data
-C:\level-up\c lesson-level up\source\repos\22.9.2022\Projeckt_SnapShot_Yoni\Projeckt_SnapShot_Yoni\HTML.c(178,28): warning C4047: '=': 'char' differs in levels of indirection from 'void *'
-C:\level-up\c lesson-level up\source\repos\22.9.2022\Projeckt_SnapShot_Yoni\Projeckt_SnapShot_Yoni\HTML.c(184,14): warning C4267: '=': conversion from 'size_t' to 'unsigned long', possible loss of data
-C:\level-up\c lesson-level up\source\repos\22.9.2022\Projeckt_SnapShot_Yoni\Projeckt_SnapShot_Yoni\HTML.c(185,28): warning C4047: '=': 'char' differs in levels of indirection from 'void *'
-C:\level-up\c lesson-level up\source\repos\22.9.2022\Projeckt_SnapShot_Yoni\Projeckt_SnapShot_Yoni\HTML.c(193,14): warning C4267: '=': conversion from 'size_t' to 'unsigned long', possible loss of data
-C:\level-up\c lesson-level up\source\repos\22.9.2022\Projeckt_SnapShot_Yoni\Projeckt_SnapShot_Yoni\HTML.c(194,28): warning C4047: '=': 'char' differs in levels of indirection from 'void *'
-C:\level-up\c lesson-level up\source\repos\22.9.2022\Projeckt_SnapShot_Yoni\Projeckt_SnapShot_Yoni\HTML.c(203,15): warning C4267: '=': conversion from 'size_t' to 'unsigned long', possible loss of data
-C:\level-up\c lesson-level up\source\repos\22.9.2022\Projeckt_SnapShot_Yoni\Projeckt_SnapShot_Yoni\HTML.c(204,29): warning C4047: '=': 'char' differs in levels of indirection from 'void *'
-C:\level-up\c lesson-level up\source\repos\22.9.2022\Projeckt_SnapShot_Yoni\Projeckt_SnapShot_Yoni\HTML.c(210,15): warning C4267: '=': conversion from 'size_t' to 'unsigned long', possible loss of data
-C:\level-up\c lesson-level up\source\repos\22.9.2022\Projeckt_SnapShot_Yoni\Projeckt_SnapShot_Yoni\HTML.c(211,29): warning C4047: '=': 'char' differs in levels of indirection from 'void *'
-C:\level-up\c lesson-level up\source\repos\22.9.2022\Projeckt_SnapShot_Yoni\Projeckt_SnapShot_Yoni\HTML.c(220,14): warning C4267: '=': conversion from 'size_t' to 'unsigned long', possible loss of data
-C:\level-up\c lesson-level up\source\repos\22.9.2022\Projeckt_SnapShot_Yoni\Projeckt_SnapShot_Yoni\HTML.c(221,28): warning C4047: '=': 'char' differs in levels of indirection from 'void *'
-C:\level-up\c lesson-level up\source\repos\22.9.2022\Projeckt_SnapShot_Yoni\Projeckt_SnapShot_Yoni\HTML.c(151,28): warning C4244: 'initializing': conversion from '__int64' to 'unsigned long', possible loss of data
-C:\level-up\c lesson-level up\source\repos\22.9.2022\Projeckt_SnapShot_Yoni\Projeckt_SnapShot_Yoni\HTML.c(267,26): warning C4047: '=': 'char' differs in levels of indirection from 'void *'
-C:\level-up\c lesson-level up\source\repos\22.9.2022\Projeckt_SnapShot_Yoni\Projeckt_SnapShot_Yoni\HTML.c(272,12): warning C4267: '=': conversion from 'size_t' to 'unsigned long', possible loss of data
-C:\level-up\c lesson-level up\source\repos\22.9.2022\Projeckt_SnapShot_Yoni\Projeckt_SnapShot_Yoni\HTML.c(273,26): warning C4047: '=': 'char' differs in levels of indirection from 'void *'
-C:\level-up\c lesson-level up\source\repos\22.9.2022\Projeckt_SnapShot_Yoni\Projeckt_SnapShot_Yoni\HTML.c(280,13): warning C4267: '=': conversion from 'size_t' to 'unsigned long', possible loss of data
-C:\level-up\c lesson-level up\source\repos\22.9.2022\Projeckt_SnapShot_Yoni\Projeckt_SnapShot_Yoni\HTML.c(281,27): warning C4047: '=': 'char' differs in levels of indirection from 'void *'
-C:\level-up\c lesson-level up\source\repos\22.9.2022\Projeckt_SnapShot_Yoni\Projeckt_SnapShot_Yoni\HTML.c(257,28): warning C4244: 'initializing': conversion from '__int64' to 'unsigned long', possible loss of data
-  Log.c
   Main.c
   Generating Code...
 C:\level-up\c lesson-level up\source\repos\22.9.2022\Projeckt_SnapShot_Yoni\Projeckt_SnapShot_Yoni\Data_Base_SnapShot.c(589): warning C4715: 'SearchProcess': not all control paths return a value

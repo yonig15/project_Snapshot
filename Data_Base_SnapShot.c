@@ -778,7 +778,7 @@ void GetProcessesInfo_20()
 		//printf("\033[5;1Hhello"); // Move to (8, 5) and output hello
 		printf("The number of SnapShot taken: %d", counter_of_shots);
 		counter_of_shots++;
-		Sleep(1000);
+		/*Sleep(1000);*/
 
 		//Get Processes - Receive all process ID
 		DWORD aProcesses[1024], cbNeeded, cProcesses;  //* aProcesses - array of id, * cProcesses - how many id we have 
