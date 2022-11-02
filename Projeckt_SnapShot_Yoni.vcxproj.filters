@@ -50,5 +50,8 @@
     <ClInclude Include="Structures2.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="yoni_Utilities.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>

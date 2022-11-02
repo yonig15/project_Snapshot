@@ -2,7 +2,8 @@
 
 #include <windows.h>
 
-#include "Log1.h"
+//#include "Log1.h"
+#include "yoni_Utilities.h"
 
 typedef struct HeadOfSnapshotsList_Header
 {

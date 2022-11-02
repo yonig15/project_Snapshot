@@ -10,6 +10,7 @@
 #pragma warning (disable : 4996)
 
 #include "Files5.h"
+//#include "Utilities.h"
 
 #define clear() printf("\033[H\033[J")
 //https://stackoverflow.com/questions/26423537/how-to-position-the-input-text-cursor-in-c
@@ -17,7 +18,6 @@
 
 int main()
 {
-	
 	time_t t;
 	time(&t);
 	struct tm* timeinfo;
